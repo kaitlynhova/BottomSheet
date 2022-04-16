@@ -48,7 +48,8 @@ You can find the expected theme object shape in theme.ts. The nomenclature is ba
 
 ## Note
 
-Would like to revisit the state where there is not title or subtitle to see what design would like to do with that.
+1. Didn't have time to tackle the updating scroll size in the way that it would auto update but can do.
+2. Would like to revisit the state where there is not title or subtitle to see what design would like to do with that.
 
 ## Extra Credit:
 
