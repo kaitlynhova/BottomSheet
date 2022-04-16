@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { ButtonsWrapper, Container, Content } from "./AppStyles";
+import { ButtonsWrapper, Container, Content, DemoChild } from "./AppStyles";
+import { BottomSheet } from "./components/BottomSheet";
 import { Button } from "./components/Button";
+import { generatePlaceholderContent } from "./data";
 import { closedTheme, openTheme } from "./theme";
 
 const App = () => {
-  // STATE
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isDebugMode, setIsDebugMode] = useState<boolean>(false);
 
@@ -31,6 +32,17 @@ const App = () => {
               }}
             ></Button>
           </ButtonsWrapper>
+          <BottomSheet
+            title="weeee "
+            subtitle="wwwweeeee"
+            isDebugMode={isDebugMode}
+            isOpen={isOpen}
+            onClose={() => {
+              setIsOpen(false);
+            }}
+          >
+            <DemoChild>{generatePlaceholderContent(3000).join(", ")}</DemoChild>
+          </BottomSheet>
         </Content>
       </Container>
     </ThemeProvider>
