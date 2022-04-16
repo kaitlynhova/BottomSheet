@@ -259,7 +259,8 @@ export const BottomSheet: React.FC<TBottomSheetProps> = ({
             ref={scrollRef}
             tabIndex={0}
             bodyHeight={
-              DRAWER_HEIGHT -
+              DRAWER_HEIGHT +
+              bottom -
               (title || subtitle ? COLLAPSED_HEIGHT : THUMB_HEIGHT)
             }
           >
