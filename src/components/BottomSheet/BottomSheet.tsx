@@ -55,7 +55,6 @@ type TBottomSheetProps = {
    * Optional custom maxWidth for the BottomSheet in px
    */
   maxWidth?: string;
-
   /**
    * Fires when close button is fired
    */

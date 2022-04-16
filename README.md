@@ -1,6 +1,7 @@
 ## BottomSheet component
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3b648c9c-6490-43e9-9646-b297dc2654a5/deploy-status)](https://app.netlify.com/sites/gentle-custard-f68661/deploys)
+
 [See Demo App](https://gentle-custard-f68661.netlify.app/)
 
 A basic bottom sheet implementation
@@ -24,13 +25,13 @@ Bonus: The component snaps to the top of the screen if you get close enough.
 In this component we are:
 
 - turns off animation if your local has set "prefers reduce motion" to true ([see docs](https://react-spring.io/guides/accessibility#accessibility))
-- Using rem for font sizes
+- made the BottomSheet's scrollable area have a tab index of 0 so that you can use arrow keys to scroll
+- Using rem for font sizes so users can have larger font sizes if their local is defaulted to do so.
 - Making the close button accessible by tabbing by making it a button.
 - Allowing devs to pass down a custom aria label for the close button (closeButtonAriaLabel prop)
 - Saying this is a modal by setting aria-modal to true
 - Setting the component’s role to “dialog”
 - Setting the aria-labelledby’s value to the dialog’s title
-- made the BottomSheet's scrollable area have a tab index of 0 so that you can use arrow keys to scroll
 
 ## Styles
 
