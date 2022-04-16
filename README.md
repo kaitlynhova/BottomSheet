@@ -22,16 +22,16 @@ Bonus: The component snaps to the top of the screen if you get close enough.
 
 ## Accessibility
 
-In this component we are:
+In this component we:
 
-- turns off animation if your local has set "prefers reduce motion" to true ([see docs](https://react-spring.io/guides/accessibility#accessibility))
-- made the BottomSheet's scrollable area have a tab index of 0 so that you can use arrow keys to scroll
-- Using rem for font sizes so users can have larger font sizes if their local is defaulted to do so.
-- Making the close button accessible by tabbing by making it a button.
-- Allowing devs to pass down a custom aria label for the close button (closeButtonAriaLabel prop)
-- Saying this is a modal by setting aria-modal to true
-- Setting the component’s role to “dialog”
-- Setting the aria-labelledby’s value to the dialog’s title
+- Turn off animation if your local has set "prefers reduce motion" to true ([see docs](https://react-spring.io/guides/accessibility#accessibility))
+- Made the BottomSheet's scrollable area have a tab index of 0 so that you can use arrow keys to scroll
+- Use rem for font sizes so users can have larger font sizes if their local is defaulted to do so.
+- Make the close button accessible by tabbing by making it a button.
+- Allow devs to pass down a custom aria label for the close button (closeButtonAriaLabel prop)
+- Say this is a modal by setting aria-modal to true
+- Set the component’s role to “dialog”
+- Set the aria-labelledby’s value to the dialog’s title
 
 ## Styles
 
@@ -56,6 +56,7 @@ Would like to revisit the state where there is not title or subtitle to see what
 
 - Jest component tests for collapsed, expanded, and dismissed states, scrolling behavior, tab index
 - e2e cypress tests for any important feature using this.
+- pull out any possible function to make unit tests
 
 2. **A quick note on how you might assist others in adopting/using the component in their code?**
 
